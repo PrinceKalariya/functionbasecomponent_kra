@@ -3,13 +3,13 @@ import React, { useState } from "react";
 export default function TextForm(props) {
   const [text, setText] = useState("");
 
-  const handleUppercase = () => {
+  const handleUpperCase = () => {
     let upperText = text.toUpperCase();
     setText(upperText);
     props.showAlert("converted to UpperCase", "success");
   };
 
-  const handleLowercase = () => {
+  const handleLowerCase = () => {
     let lowerText = text.toLowerCase();
     setText(lowerText);
     props.showAlert("converted to LowerCase", "success");
@@ -63,7 +63,7 @@ export default function TextForm(props) {
         <button
           disabled={text.length === 0}
           className="btn btn-primary mx-1 my-1"
-          onClick={handleUppercase}
+          onClick={handleUpperCase}
         >
           Convert to uppercase
         </button>
@@ -71,7 +71,7 @@ export default function TextForm(props) {
         <button
           disabled={text.length === 0}
           className="btn btn-primary mx-1 my-1"
-          onClick={handleLowercase}
+          onClick={handleLowerCase}
         >
           Convert to lowercase
         </button>
