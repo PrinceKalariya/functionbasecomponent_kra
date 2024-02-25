@@ -4,14 +4,14 @@ export default function TextForm(props) {
   const [text, setText] = useState("");
 
   const handleUpperCase = () => {
-    let upperText = text.toUpperCase();
-    setText(upperText);
+    let textInUpperCase = text.toUpperCase();
+    setText(textInUpperCase);
     props.showAlert("converted to UpperCase", "success");
   };
 
   const handleLowerCase = () => {
-    let lowerText = text.toLowerCase();
-    setText(lowerText);
+    let textInLowerCase = text.toLowerCase();
+    setText(textInLowerCase);
     props.showAlert("converted to LowerCase", "success");
   };
 
@@ -32,8 +32,8 @@ export default function TextForm(props) {
   };
 
   const handleExtraSpace = () => {
-    let newText = text.split(/[ ]+/);
-    setText(newText.join(" "));
+    let textWithOutExtraSpace = text.split(/[ ]+/);
+    setText(textWithOutExtraSpace.join(" "));
     props.showAlert("Remove extra sapce from your text", "success");
   };
 
