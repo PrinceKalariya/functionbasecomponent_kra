@@ -2,9 +2,9 @@ import React from "react";
 
 function Alert(props) {
   
-  const capitalize = (word) => {
-    const lower = word.toLowerCase();
-    return lower.charAt(0).toUpperCase() + lower.slice(1);
+  const capitalizeFirstLatter = (word) => {
+    const wordInLowerCase = word.toLowerCase();
+    return wordInLowerCase.charAt(0).toUpperCase() + wordInLowerCase.slice(1);
   };
 
   return (
@@ -14,7 +14,7 @@ function Alert(props) {
           className={`alert alert-${props.alert.type} alert-dismissible fade show`}
           role="alert"
         >
-          <strong>{capitalize(props.alert.type)}</strong> :{" "}
+          <strong>{capitalizeFirstLatter(props.alert.type)}</strong> :{" "}
           {props.alert.message}
         </div>
       )}
