@@ -39,7 +39,7 @@ jobs:
      needs: build
      environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.https://princekalariya.github.io/functionbasecomponent_kra/about }}
+      url: ${{ steps.deployment.outputs.page_url }}
      runs-on: ubuntu-latest
      steps:
         - name: Checkout repository
