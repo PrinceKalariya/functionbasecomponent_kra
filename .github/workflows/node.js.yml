@@ -49,3 +49,5 @@ jobs:
             github_token: ${{ secrets.Deploy_Sec }}
             publish_dir: ./dist
       
+        - name : predeploy
+          run : gh-pages -d build
