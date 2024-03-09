@@ -39,8 +39,5 @@ jobs:
      needs: build
      runs-on: ubuntu-latest
      steps:
-        - name: Checkout repository
-          uses: actions/checkout@v3
-          
-        - name: Deploy to GitHub Pages
-          uses: peaceiris/actions-gh-pages@v3
+       - name : DeployPages
+         run : actions/deploy-pages@v4
