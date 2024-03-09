@@ -8,7 +8,7 @@ export default function Navbar(props) {
       className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}
     >
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/functionbasecomponent_kra/home">
           {props.title}
         </Link>
         <button
@@ -30,7 +30,7 @@ export default function Navbar(props) {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/functionbasecomponent_kra/about">
                 {props.aboutUtil}
               </Link>
             </li>

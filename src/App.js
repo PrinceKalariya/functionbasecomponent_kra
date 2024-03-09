@@ -39,9 +39,9 @@ function App() {
         <Alert alert={alert} />
         <div className="container my-3">
           <Routes>
-            <Route exact path="/about" element={<About mode={mode} />}></Route>
+            <Route exact path="/functionbasecomponent_kra/about" element={<About mode={mode} />}></Route>
             <Route
-              path="/"
+              path="/functionbasecomponent_kra/home"
               exact
               element={
                 <TextForm
