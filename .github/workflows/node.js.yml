@@ -49,6 +49,6 @@ jobs:
             github_token: ${{ secrets.Deploy_Sec }}
             publish_dir: ./dist
 
-        - name : Deploy
+        - name : deploy
           run : npm run deploy
       
