@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/functionbasecomponent_kra/home/static/css/main.9895144a.css",
-    "main.js": "/functionbasecomponent_kra/home/static/js/main.306b539c.js",
-    "static/js/453.65184930.chunk.js": "/functionbasecomponent_kra/home/static/js/453.65184930.chunk.js",
-    "index.html": "/functionbasecomponent_kra/home/index.html",
-    "main.9895144a.css.map": "/functionbasecomponent_kra/home/static/css/main.9895144a.css.map",
-    "main.306b539c.js.map": "/functionbasecomponent_kra/home/static/js/main.306b539c.js.map",
-    "453.65184930.chunk.js.map": "/functionbasecomponent_kra/home/static/js/453.65184930.chunk.js.map"
+    "main.css": "/functionbasecomponent_kra/static/css/main.9895144a.css",
+    "main.js": "/functionbasecomponent_kra/static/js/main.c60ddcad.js",
+    "static/js/453.65184930.chunk.js": "/functionbasecomponent_kra/static/js/453.65184930.chunk.js",
+    "index.html": "/functionbasecomponent_kra/index.html",
+    "main.9895144a.css.map": "/functionbasecomponent_kra/static/css/main.9895144a.css.map",
+    "main.c60ddcad.js.map": "/functionbasecomponent_kra/static/js/main.c60ddcad.js.map",
+    "453.65184930.chunk.js.map": "/functionbasecomponent_kra/static/js/453.65184930.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9895144a.css",
-    "static/js/main.306b539c.js"
+    "static/js/main.c60ddcad.js"
   ]
 }
