@@ -37,10 +37,17 @@ jobs:
 
   deploy :
      needs: build
+     environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.https://princekalariya.github.io/functionbasecomponent_kra/about }}
      runs-on: ubuntu-latest
      steps:
         - name: Checkout repository
           uses: actions/checkout@v3
+
+        - name: Deploy to GitHub Pages
+          id: deployment
+          uses: actions/deploy-pages@v3
           
         - name: Deploy to GitHub Pages
           uses: peaceiris/actions-gh-pages@v3
