@@ -42,6 +42,9 @@ jobs:
      steps:
         - name: Checkout repository
           uses: actions/checkout@v3
+          with:
+            name: production-files
+            path: ./dist
           
         - name: Deploy to GitHub Pages
           uses: peaceiris/actions-gh-pages@v3
