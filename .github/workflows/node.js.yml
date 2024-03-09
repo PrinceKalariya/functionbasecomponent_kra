@@ -32,14 +32,21 @@ jobs:
     - name : Install dependencies
       run : npm install
 
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
-      
     - name : Build 
       run: npm run build
+
+
+  deploy :
+     needs: build
+     runs-on: ubuntu-latest
+     steps:
+        - name: Checkout repository
+          uses: actions/checkout@v3
+          
+        - name: Deploy to GitHub Pages
+          uses: peaceiris/actions-gh-pages@v3
+          with:
+            github_token: ${{ secrets.Deploy_Sec }}
+            publish_dir: ./dist
       
-    - name: Deploy
-      run: npm run deploy
-        git config --global user.email "princekalariya179@gmail.com"
-        git config --global user.name "PrinceKalariya"
       
