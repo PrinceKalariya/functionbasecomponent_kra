@@ -50,5 +50,5 @@ jobs:
             publish_dir: ./dist
 
         - name : Deploy
-          run : npm run Deploy
+          run : npm run deploy
       
