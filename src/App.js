@@ -41,7 +41,7 @@ function App() {
           <Routes>
             <Route exact path="/functionbasecomponent_kra/about" element={<About mode={mode} />}></Route>
             <Route
-              path="/functionbasecomponent_kra"
+              path="/functionbasecomponent_kra/home"
               exact
               element={
                 <TextForm
