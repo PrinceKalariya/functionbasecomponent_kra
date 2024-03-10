@@ -53,4 +53,4 @@ jobs:
        clean: true
      env:
        CI: true
-       GITHUB_TOKEN: ${{ secrets.CICD_TOKEN }}
+       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
