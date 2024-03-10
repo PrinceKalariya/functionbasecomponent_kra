@@ -13,7 +13,7 @@ export default function About(props) {
 
         <div className="p-3" style={myStyle}>
           <p style={myStyle}>
-            {/* TextUtils is a ReactJs website built primarily to do various
+            TextUtils is a ReactJs website built primarily to do various
             operations on regular typed text. You can safely use WordPad or
             NotePad for text drafting, and saving, but TextUtils offers much
             more than simple text drafting and formatting. TextUtils can convert
@@ -27,7 +27,7 @@ export default function About(props) {
             characters, along with reading time as well. The best part of
             TextUtils is that it is an open source project, as a result, dozens
             of new features are in the upcoming, which definitely makes it a cut
-            above the rest. */}
+            above the rest.
           </p>
         </div>
       </div>
