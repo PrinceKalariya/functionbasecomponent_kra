@@ -28,6 +28,8 @@ export default function About(props) {
             TextUtils is that it is an open source project, as a result, dozens
             of new features are in the upcoming, which definitely makes it a cut
             above the rest.
+
+            Thank you !!
           </p>
         </div>
       </div>
