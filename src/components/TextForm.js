@@ -106,7 +106,7 @@ export default function TextForm(props) {
           color: props.mode === "dark" ? "white" : "black",
         }}
       >
-        <h2>Your Text Summary</h2>
+        <h2>Your Text Summary Please Checked</h2>
         <p>
           {
             text.split(/\s+/).filter((element) => {
