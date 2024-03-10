@@ -26,20 +26,31 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        
+    - name: Install Dependencies
+    - run: npm install    
+
+    - name: Build
     - run: npm run build
+
+    - name: Test
     - run: npm test
 
   deploy:
-    # Add a dependency to the build job
-    needs: build
+  
+   needs: build
+   runs-on: ubuntu-latest
 
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    # Specify runner + deployment step
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4 # or specific "vX.X.X" version tag for this action
+   steps:
+   - name: Checkout Repository
+     uses: actions/checkout@v2
+     
+   - name: Deploy
+     uses: JamesIves/github-pages-deploy-action@3.7.1
+     with:
+       branch: gh-pages
+       folder: build
+       clean: true
+     env:
+       CI: true
+       GITHUB_TOKEN: ${{ secrets.CICD_TOKEN }}
