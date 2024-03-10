@@ -36,6 +36,14 @@ jobs:
   deploy:
   
    needs: build
+   permissions:
+    pages: write     
+    id-token: write
+
+   environment:
+    name: github-pages
+    url: ${{ steps.deployment.outputs.page_url }}
+   
    runs-on: ubuntu-latest
 
    steps:
@@ -44,9 +52,3 @@ jobs:
      
    - name: Deploy
      uses: actions/deploy-pages@v4
-     with:
-       branch: gh-pages
-       folder: build
-       clean: true
-     env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
