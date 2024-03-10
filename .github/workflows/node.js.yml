@@ -51,6 +51,3 @@ jobs:
        branch: gh-pages
        folder: build
        clean: true
-     env:
-       CI: true
-       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
